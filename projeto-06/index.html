@@ -3,23 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../imagens/favicon-javascript.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Exercício 01</title>
+    <link rel="shortcut icon" href="../imagens/Tec.png" type="image/x-icon">
+    <title>site.com</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(172, 214, 172);
+        }
+
+        header {
+            background-color: rgb(8, 106, 8);
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        header > p {
+            margin-top: 9px;
+        }
+
+        nav {
+            background-color: rgb(26, 100, 26);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav > a {
+            color: white;
+            font-weight: bold;
+            margin: 5px;
+            text-decoration: none;
+        }
+
+        nav > a:hover {
+            background-color: rgb(10, 120, 10);
+            padding: 10px;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        
+        main {
+            max-width: 900px;
+            padding-bottom: 10px;
+            margin: auto;
+            background-color: white;
+            border-radius: 13px;
+        }
+
+        main > h2 {
+            color: green;
+            padding: 10px;
+        }
+
+        main > p {
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        main > img {
+            margin: auto;
+            border-radius: 15px;
+            max-width: 100%;
+        }
+
+        section {
+            background-color: rgb(113, 163, 113);
+            border-radius: 10px;
+        }
+
+        section > h3 {
+            text-align: center;
+            background-color: green; 
+            border-radius: 10px;
+        }
+
+        section > ul > li {
+            font-weight: bold;
+            list-style-position: inside;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        footer {
+            background-color: green;
+            padding: 6px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Curso de <span style="color: yellow;">JavaScript</span></h1>
-        <p>JavaScript (JS) é uma linguagem de programação interpretada, de alto nível e multiparadigma, fundamental para criar páginas web interativas e dinâmicas, atuando no front-end (navegadores) e, com Node.js, no back-end.</p>
+        <h1>Tecnologia e Inovação</h1>
+        <p>Tecnologia é a ferramenta e o conhecimento aplicado para solucionar problemas.</p>
     </header>
     <nav>
         <a href="#">Home</a>
         <a href="#">Curiosidades</a>
-        <a href="#">Termos de uso</a>
-        <a href="#">Fale conosco</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Contato</a>
     </nav>
-    <script>
-    let nome = window.prompt("Qual é seu nome ?")
-    </script>
+    <main>
+        <h2>Tecnologia</h2>
+        <p>TI é a sigla para Tecnologia da Informação. Refere-se ao conjunto de hardwares, softwares, redes e serviços utilizados para criar, armazenar, processar, proteger e transmitir dados. Esta área é a base estrutural para a comunicação, inovação e automação de processos em empresas e na sociedade.</p>
+        <img src="../imagens/Tec.png" alt="">
+        <h2>Inovação</h2>
+        <p>Inovação é a implementação bem-sucedida de uma nova ideia, produto, serviço ou processo que gera valor real. Não se trata apenas de criatividade ou invenção isolada, mas sim de transformar essa novidade em algo útil, prático e rentável para o mercado ou para a sociedade.</p>
+        <section>
+            <h3>Seção de Tecnologia da Informação</h3>
+            <ul>
+                <li>Alta demanda de empregos — Há muitas oportunidades em diversas áreas de T.I.</li>
+                <li>Bons salários — Profissionais qualificados costumam ter remuneração competitiva.</li>
+                <li>Trabalho flexível — Muitas vagas permitem trabalho remoto e horários mais flexíveis.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Site Criado para Estudos</p>
+    </footer>
 </body>
 </html>
