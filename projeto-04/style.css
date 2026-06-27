@@ -48,3 +48,24 @@ a:hover {
     padding: 9px;
     border-radius: 10px;
 }
+
+main {
+    background-color: white;
+    max-width: 900px;
+    height: 700px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: solid black 1px;
+}
+
+main > h2 {
+    color: green;
+    padding: 7px;
+}
+
+main > p {
+    padding: 7px;
+    line-height: 1.5;
+    font-weight: bold;
+}
