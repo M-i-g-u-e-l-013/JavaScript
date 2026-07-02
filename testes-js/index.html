@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon-javascript.png" type="image/x-icon">
+    <title>testes.com</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(166, 217, 166);
+        }
+
+        header {
+            background-color: rgb(3, 112, 3);
+            color: white;
+            text-align: center;
+        }
+
+        header > p {
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        nav {
+            background-color: green;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        nav > a {
+            color: white;
+            margin: 5px;
+            text-decoration: none;
+        }
+
+        nav > a:hover {
+            background-color: rgb(110, 175, 110);
+            padding: 10px;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        main {
+            background-color: white;
+            margin: auto 30px;
+            padding-bottom: 900px;
+        }
+
+        main > h2 {
+            padding: 10px;
+            color: rgb(129, 178, 129);
+        }
+
+        main > p {
+            line-height: 1.5;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: green;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tecnologia e Inovação</h1>
+        <p>Tecnologia é a base prática que permite criar soluções, enquanto a inovação é o processo de aplicar essas soluções de forma nova.</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Contato</a>
+    </nav>
+    <main>
+        <h2>Qual o futuro da I.A ? </h2>
+        <p>A IA continuará se tornando cada vez mais integrada à vida pessoal, profissional e estratégica, com modelos mais acessíveis, eficientes e especializados, impactando tecnologia, negócios e sociedade.</p>
+        <h2>Qual o futuro da Cyber Segurança ?</h2>
+        <p>O futuro da cibersegurança será marcado por várias tendências e desafios:
+           Inteligência Artificial (IA): A IA será fundamental para detectar e responder a ameaças, permitindo uma defesa mais proativa e automatizada.</p>
+    </main>
+    <footer>
+        <p>Site Criado para estudos!</p>
+    </footer>
+    <script>
+        let nome = window.prompt("Qual o seu nome ?")
+        window.alert(`É um prazer em conheçe-lo(a) ${nome}!`)
+        let n1 = Number(window.prompt("Digite um número: "))
+        let n2 = Number(window.prompt("Digite outro número: "))
+        let soma = n1 + n2
+        window.alert(`${n1} + ${n2} = ${soma}`)
+    </script>
+</body>
+</html>
