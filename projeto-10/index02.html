@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Somando números</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(181, 225, 181);
+        }
+
+        h1 {
+            text-align: center;
+            background-color: green;
+            padding: 20px;
+            color: white;
+        }
+
+        nav {
+            background-color: rgb(5, 111, 5);
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav > a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 6px;
+        }
+
+        nav > a:hover {
+            background-color: green;
+            padding: 9px;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        input {
+            border: 2px solid black;
+            padding: 1px;
+            font-weight: bold;
+            margin-top: 8px;
+            margin: 6px;
+            margin-top: 10px;
+        }
+
+        input[type="button"]  {
+            background-color: rgb(16, 183, 16);
+            padding: 5px;
+            color: white;
+        }
+
+        input[type="button"]:hover {
+            background-color: green;
+        }
+
+        div#res {
+            font-weight: bold;
+            padding: 6px;
+        }
+
+        fieldset {
+            border: 2px solid green;
+        }
+
+        legend {
+            font-weight: bold;
+            color: rgb(17, 105, 17);
+        }
+
+        input[type="reset"] {
+            background-color: rgb(255, 1, 1);
+            color: white;
+            padding: 5px;
+        }
+
+         input[type="reset"]:hover {
+            background-color: rgb(136, 13, 13);
+         }
+    </style>
+</head>
+<body>
+
+<h1>Somando Valores</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Curiosidades</a>
+<a href="#">Termos de Uso</a>
+</nav>
+<form>
+    <fieldset>
+    <legend>Soma dos números</legend>
+
+    <input type="number" id="txtn1" placeholder="Digite um número:">      +
+    <input type="number" id="txtn2" placeholder="Digite outro número:">
+
+</fieldset>
+
+<input type="button" value="Somar" onclick="somar()">
+<input type="reset" value="Excluir">
+
+<div id="res">Resultado:</div>
+</form>
+
+<script>
+function somar() {
+    let n1 = document.getElementById("txtn1");
+    let n2 = document.getElementById("txtn2");
+
+    let valor1 = Number(n1.value);
+    let valor2 = Number(n2.value);
+
+    let soma = valor1 + valor2;
+
+    let res = document.getElementById("res");
+
+    res.innerHTML = `${valor1} + ${valor2} = ${soma}`;
+}
+</script>
+
+</body>
+</html>

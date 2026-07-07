@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testes.com</title>
+    <style>
+        body {
+            background-color: rgb(165, 221, 165);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DOM</h1>
+        <p><strong>O DOM (Document Object Model)</strong> é uma representação da página HTML em forma de objetos, que permite ao JavaScript acessar, modificar e interagir com os elementos da página.</p>
+    </header>
+    <main>
+        <div id="msg" >Clique Aqui!</div>
+    </main>
+    <script>
+        let corpo = window.document.body
+        let d = window.document.getElementById('msg')
+        var p1 = window.document.getElementsByTagName("p")[0]
+        window.document.write("Está escrito assim: " + p1.innerText)
+        p1.style.color = "blue"
+
+        corpo.style.background = "white"
+        d.style.background = 'green'
+        d.innerText = "Aguarde..."
+    </script>
+</body>
+</html>
