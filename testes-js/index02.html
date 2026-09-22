@@ -4,14 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>testes.com</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header > h1 {
+            text-align: center;
+            padding: 10px;
+        }
+
+        header > p {
+            text-align: center;
+            padding: 10px;
+            line-height: 1.2;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello Word!</h1>
+    <header>
+        <h1 id="color">Introdução ao DOM</h1>
+        <p>O <strong>DOM</strong>, ou Modelo de Objetos do Documento, é uma representação da página <strong>HTML</strong> que o navegador cria para que o JavaScript consiga acessar os elementos da página.</p>
+    </header>
+    <hr>
     <script>
-        let nome = window.prompt("Qual o seu nome ? ")
-        document.write(`Olá, <b>${nome}!</b> Seu nome contem ${nome.length} letras.<br>`)
-        document.write(`${nome}, seu nome em maiusculo é ${nome.toUpperCase()}</br>`)
-        document.write(`<b>${nome}</b>, seu nome em minusculo é ${nome.toLowerCase()}`)
+        let corpo = document.body
+        let p1 = document.getElementsByTagName("p")[0]
+        let p2 = document.getElementById("color")
+        corpo.style.background = "white"
+        p1.style.color = "green"
+        p2.style.color = "blue"
     </script>
 </body>
 </html>
