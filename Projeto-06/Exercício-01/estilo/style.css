@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(34, 34, 200);
+    font-family: Arial, Helvetica, sans-serif;
+    font: normal 15pt;
+}
+
+header {
+background-color: rgb(34, 34, 200);
+text-align: center;
+padding: 15px;
+color: white;
+
+}
+
+nav {
+    background-color: rgb(17, 17, 156);
+    padding: 10px;
+    text-align: center;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 6px;
+}
+
+nav > a:hover {
+    background-color: rgba(5, 5, 255, 0.326);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+header > p {
+    margin-top: 6px;
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: 30px auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+#foto > img {
+    width: 500px;        /* Define a largura desejada */
+    height: 500px;       /* Define a altura desejada */
+    border-radius: 50%;  /* Deixa a imagem arredondada */
+    object-fit: cover;   /* Impede que a imagem fique distorcida */
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
